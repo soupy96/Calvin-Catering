@@ -1,0 +1,155 @@
+body {
+	background-color: #8f8d88;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Dosis', sans-serif;
+}
+
+#wrap {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	background-color: #ffffff;
+	float: left;
+}
+
+header {
+	height: 372.58px;
+}
+
+header img {
+	width: 100%;
+}
+
+nav {
+	width: 100%;
+	float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #872c2a;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    background-color: #872c2a;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    width: 100%;
+    transition:transform 2s;
+}
+
+nav ul li:hover {
+	animation: colourchange 1s forwards;
+}
+
+nav ul li a:hover {
+	transform: rotate(-5deg);
+}
+
+@keyframes colourchange {
+	from {
+		background-color: #872c2a;
+	}
+	to {
+		background-color: #b45e5c;
+	}
+}
+
+section {
+	width: 68%;
+	float: left;
+	padding: 10px;
+}
+
+aside {
+	width: 28%;
+	float: left;
+	padding: 10px;
+}
+
+section img {
+	float: right;
+	padding: 10px;
+}
+
+section ul {
+	background-color: #ffffff;
+	list-style-type: disc;
+	margin: 0px 0px 0px 20px;
+	padding: 0px 0px 0px 20px;
+}
+
+h1, h2 {
+	font-family: 'Cookie', cursive;
+	text-shadow: 4px 4px 6px rgba(150, 150, 150, 1);
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+span {
+	font-weight: bold;
+}
+
+footer {
+	width: 100%;
+	float: left;
+	background-color: #872c2a;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 540px) {
+	#wrap {
+		width: 100%;
+		margin: 0px;
+	}
+
+	header {
+		height: 137.19px;
+	}
+
+	nav ul li {
+		width: 100%;
+	}
+
+	section {
+		width: 100%;
+		padding: 0px;
+	}
+
+	section img {
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 30px;
+	}
+
+	aside {
+		width: 100%;
+		padding: 0px;
+	}
+
+	h1, h2 {
+		padding-left: 10px;
+	}
+
+	p {
+		padding: 0px 10px 0px 10px;
+	}
+}
